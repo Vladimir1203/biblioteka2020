@@ -8,12 +8,15 @@ import biblioteka.Knjiga;
 public interface BibliotekaInterfejs {
 
 	public void dodajKnjigu(Knjiga knjiga);
-	
+
 	public void obrisiKnjigu(Knjiga knjiga);
-	
+
 	public List<Knjiga> vratiSveKnjige();
-	
-	public List<Knjiga> pronadjiKnjigu(Autor autor,
-			String isbn, String naslov, String izdavac);
-	
+
+	public List<Knjiga> pronadjiKnjigu(Autor autor, String isbn, String naslov, String izdavac);
+
+	public void sacuvajKnjigeUFajl(String putanja);
+
+	public void ucitajKnjigeIzFajla(String putanja);
+
 }
