@@ -119,8 +119,6 @@ public class Biblioteka implements BibliotekaInterfejs {
 
 	@Override
 	public void ucitajKnjigeIzFajla(String putanja) {
-		for (Knjiga k : knjige)
-			obrisiKnjigu(k);
 
 		try (FileReader in = new FileReader(putanja)) {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -132,6 +130,11 @@ public class Biblioteka implements BibliotekaInterfejs {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void obrisiSveKnjige() {
+		for (Knjiga k : knjige)
+			obrisiKnjigu(k);
 	}
 
 }

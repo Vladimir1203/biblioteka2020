@@ -1,0 +1,30 @@
+[
+  {
+    "naslov": "Robinzon Kruso",
+    "isbn": "123",
+    "autori": [
+      {
+        "ime": "Danijel",
+        "prezime": "Defo"
+      },
+      {
+        "ime": "Vladimir",
+        "prezime": "Lazic"
+      }
+    ],
+    "izdavac": "Raska",
+    "izdanje": 2020
+  },
+  {
+    "naslov": "Ja, tajkun",
+    "isbn": "111",
+    "autori": [
+      {
+        "ime": "Miroslav",
+        "prezime": "Miskovic"
+      }
+    ],
+    "izdavac": "Beograd",
+    "izdanje": 2018
+  }
+]
